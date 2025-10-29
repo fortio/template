@@ -27,7 +27,7 @@ func Main() int {
 		"Use true color (24-bit RGB) instead of 8-bit ANSI colors (default is true if COLORTERM is set)")
 	fCpuprofile := flag.String("profile-cpu", "", "write cpu profile to `file`")
 	fMemprofile := flag.String("profile-mem", "", "write memory profile to `file`")
-	fFPS := flag.Float64("fps", 60, "Frames per second (ansipoixels rendering)")
+	fFPS := flag.Float64("fps", 60, "Frames per second (ansipixels rendering)")
 	cli.Main()
 	if *fCpuprofile != "" {
 		f, err := os.Create(*fCpuprofile)
