@@ -1,0 +1,2 @@
+# template
+Template Go repo
