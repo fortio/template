@@ -60,7 +60,8 @@ func Main() int {
 		ap.EndSyncMode()
 		return nil
 	}
-	_ = ap.OnResize() // initial draw.
+	_ = ap.OnResize()   // initial draw.
+	ap.AutoSync = false // for cursor to blink on splash screen. remove if not wanted.
 	err := ap.FPSTicks(st.Tick)
 	if *fMemprofile != "" {
 		f, errMP := os.Create(*fMemprofile)
